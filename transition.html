@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            border: 2px solid cadetblue;
+            background-color: coral;
+            transition: width 1s linear, background-color 1s linear, height 1s linear, transform 1s linear;
+            position: relative;
+            left: 30%;
+            top: 170px;
+        }
+        .box:hover{
+            width: 300px;
+            height: 300px;
+            background-color: blueviolet; 
+            transform: rotate(30deg); 
+        } 
+        .centre{
+            display:flex;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="centre">
+        <div class="box">
+            <h3>Transition</h3>
+            <h4>please hover your mouse on me</h4>
+        </div>
+        <div class="box">
+            <h3>Transition</h3>
+            <h4>please your mouse-cursor take on me</h4>
+        </div>
+        <div class="box">
+            <h3>Transition</h3>
+            <h4>please your mouse-cursor take on me</h4>
+        </div>
+    </div>
+</body>
+</html>

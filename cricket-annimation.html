@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .field{
+            position: relative;
+            top: 50px;
+            left: 50px;
+            width: 60%;
+            height: 450px;
+            border-radius: 40%;
+            border: 1px solid springgreen;
+        }
+        .ball{
+            width: 40px;
+            height: 40px;
+            background-image: linear-gradient(red, tomato, red, tomato,red, tomato);
+            border-radius: 50%;
+            position: relative;
+            left: 370px;
+            top: 20px;
+        }
+        .bat{
+            position: relative;
+            top: 60px;
+            left: 80px;
+            /* transition: transform 0.5s; */
+        }
+        .field:hover .ball{
+            transform: translate(300px , -100px);
+            transition: transform 1s ease-out .3s;
+        }
+        .field:hover .bat{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+            transition: transform 0.2s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Cricket Annimation</h1>
+    <h3>Please hover your mouse inside the green border</h3>
+    <div class="field">
+        <img class="bat" src="images/download.jpg" alt="">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
