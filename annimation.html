@@ -6,8 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @keyframes sliding {
+            0% {
+                background-color: limegreen;
+                left: 0;
+                top: 0;
+                
+            }
+            25%{
+                top: 200px;
+                background-color: rebeccapurple;
+                transform: scale(0.5);
+            }
+            50%{
+                top: 0;
+                background-color: saddlebrown;
+                transform: scale(1);
+            }
+            75%{
+                top: 200px;
+                background-color: slateblue;
+                transform: scale(0.5);
+            }
+            100% {
+                background-color: magenta;
+                left: 1250px;
+                top: 0;
+            }
+        }
         .stage{
-            width: 300px;
+            width: 1350px;
             height: 300px;
             background-color: wheat;
         }
@@ -16,6 +44,10 @@
             height: 100px;
             background-color: limegreen;
             border-radius: 50%;
+            position: relative;
+            animation: sliding 2s ease-in-out .5s infinite alternate ;
+            animation-play-state: running;
+            
         }
 
     </style>
